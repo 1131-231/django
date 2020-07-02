@@ -13,4 +13,5 @@ phases:
       - pip install gunicorn
   build:
     commands:
-      - ./manage.py test
+      - chmod +x resource.sh
+      - ./resource.sh
