@@ -6,7 +6,10 @@ phases:
       # Update libs
       - apt-get update
       # Headless Chrome
-      - apt-get install nginx supervisor python-pip python-virtualenv
+      - apt-get install nginx
+      - apt-get install supervisor
+      - apt-get install python-pip
+      - apt-get install python-virtualenv
       - pip install gunicorn
   build:
     commands:
