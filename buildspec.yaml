@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Update libs
+      - apt-get update
+      # Headless Chrome
+      - apt-get install nginx supervisor python-pip python-virtualenv
+      - pip install gunicorn
+  build:
+    commands:
+      - ./manage.py test
